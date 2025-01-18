@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5dc;
+}
+
+.content-section {
+    margin: 20px 0;
+}
+
+.accordion-content {
+    display: none;
+}
+
+.image-container img {
+    max-width: 20%;
+    height: auto;
+}
+
+/* Interaction Section */
+.interaction-section {
+    margin-top: 20px;
+}
+
+#comment-form {
+    display: none; /* Initially hidden */
+}
+
+/* Contact Form */
+#contact-form input, 
+#contact-form textarea {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
+}
+/*Drop down for menu*/
+    .dropdown-menu {
+        display: none;
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .dropdown-menu p {
+        margin: 5px 0;
+        cursor: pointer;
+}

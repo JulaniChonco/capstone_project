@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery Library -->
+    <script src="script.js" defer></script> <!-- Link to external JavaScript -->
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>My Restaurant</h1>
+
+    <!-- Subheading Sections with "Save for Later" buttons -->
+    <div class="content-section" id="our-story">
+        <h2>Our Story</h2>
+        <p>Our restaurant was born out of love for culinary excellence and warm hospitality.</p>
+        <div class="image-container"><img src="photos/inyama2.jpg" alt="Our Story Image"></div>
+        <button class="save-btn" data-item="Our Story">Save for Later</button>
+    </div>
+
+    <div class="content-section" id="our-food">
+        <h2>Our Food</h2>
+        <p>We offer a wide variety of delicious dishes crafted from the finest ingredients.</p>
+        <div class="image-container"><img src="photos/inyama.jpg" alt="Our Food Image"></div>
+        <!-- Drop-down menu -->
+        <div class="dropdown-menu">
+            <p>Breakfast</p>
+            <p>Lunch</p>
+            <p>Dinner</p>
+            <p>Desserts</p>
+            <p>Drinks</p>
+        </div>
+    </div>
+
+    <div class="content-section" id="our-people">
+        <h2>Our People</h2>
+        <p>Our team is passionate, friendly, and committed to providing an unforgettable experience.</p>
+        <div class="image-container"><img src="photos/ourp.jpg" alt="Our People Image"></div>
+        <button class="save-btn" data-item="Our People">Save for Later</button>
+    </div>
+
+    <!-- Like and Comment Forms -->
+    <div class="interaction-section">
+        <h3>Leave a Comment:</h3>
+        <form id="comment-form">
+            <input type="text" placeholder="Your comment" required>
+            <button type="submit">Submit</button>
+        </form>
+        <form id="like-form">
+            <button type="button" id="like-btn">Like 👍</button>
+            <span id="like-count">0</span> Likes
+        </form>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="content-section" id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Buttons for Fading Animation -->
+    <button id="fade-in-btn">Fade In Image</button>
+    <button id="fade-out-btn">Fade Out Image</button>
+    <button id="stop-animation-btn">Stop Animation</button>
+</body>
+</html>
